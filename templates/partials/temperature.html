@@ -1,0 +1,31 @@
+<form
+  id="temperature-form"
+  method="post"
+  action="/convert-temp"
+  data-hx-post="/convert-temp"
+  data-hx-target="#result"
+  data-hx-swap="innerHTML"
+>
+  <div class="field">
+    <label for="temp-value">Enter the temperature to convert</label>
+    <input
+      id="temp-value"
+      name="temp"
+      type="number"
+      step="any"
+      placeholder="e.g. 32"
+    />
+  </div>
+
+  <div class="field">
+    <label for="temp-from">Unit to convert from</label>
+    <input id="temp-from" name="temp-from" placeholder="e.g. C, F, K" />
+  </div>
+
+  <div class="field">
+    <label for="temp-to">Unit to convert to</label>
+    <input id="temp-to" name="temp-to" placeholder="e.g. C" />
+  </div>
+
+  <button type="submit">Convert</button>
+</form>

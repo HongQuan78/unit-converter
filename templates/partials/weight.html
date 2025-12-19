@@ -1,0 +1,36 @@
+<form
+  id="weight-form"
+  method="post"
+  action="/convert-weight"
+  data-hx-post="/convert-weight"
+  data-hx-target="#result"
+  data-hx-swap="innerHTML"
+>
+  <div class="field">
+    <label for="weight-value">Enter the weight to convert</label>
+    <input
+      id="weight-value"
+      name="weight"
+      type="number"
+      step="any"
+      min="0"
+      placeholder="e.g. 2.5"
+    />
+  </div>
+
+  <div class="field">
+    <label for="weight-from">Unit to convert from</label>
+    <input
+      id="weight-from"
+      name="weight-from"
+      placeholder="e.g. g, kg, lb, oz"
+    />
+  </div>
+
+  <div class="field">
+    <label for="weight-to">Unit to convert to</label>
+    <input id="weight-to" name="weight-to" placeholder="e.g. kg" />
+  </div>
+
+  <button type="submit">Convert</button>
+</form>

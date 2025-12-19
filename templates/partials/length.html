@@ -1,0 +1,36 @@
+<form
+  id="length-form"
+  method="post"
+  action="/convert-length"
+  data-hx-post="/convert-length"
+  data-hx-target="#result"
+  data-hx-swap="innerHTML"
+>
+  <div class="field">
+    <label for="length-value">Enter the length to convert</label>
+    <input
+      id="length-value"
+      name="length"
+      type="number"
+      step="any"
+      min="0"
+      placeholder="e.g. 12.5"
+    />
+  </div>
+
+  <div class="field">
+    <label for="length-from">Unit to convert from</label>
+    <input
+      id="length-from"
+      name="from"
+      placeholder="e.g. mm, cm, m, km, in, ft"
+    />
+  </div>
+
+  <div class="field">
+    <label for="length-to">Unit to convert to</label>
+    <input id="length-to" name="to" placeholder="e.g. cm" />
+  </div>
+
+  <button type="submit">Convert</button>
+</form>
